@@ -1,6 +1,6 @@
 const express = require("express");
 // instance of express
-const app = require ("express");
+const app = express ();
 // PORT for the server to run on
 const PORT = process.env.PORT || 3000;
 
@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended:true }));
 app.use(express.json());
 
-// route
+// routes
 app.get("/api/config", (req, res) => {
     res.json({
         success: true

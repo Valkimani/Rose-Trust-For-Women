@@ -1,5 +1,9 @@
 # Rose-Trust-For-Women
-
+ ## Using
+ M-MongoDB
+ E-Express
+ R-React
+ N-Node
 ## Basic setup
 1. `create touch server.js file`
 2. `npm init -y`
