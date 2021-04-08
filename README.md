@@ -4,3 +4,7 @@
 1. `create touch server.js file`
 2. `npm init -y`
 3. `npm install express mongoose`
+
+## Build express app
+4. `Require express in sever.js`
+
