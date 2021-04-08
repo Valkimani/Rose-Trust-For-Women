@@ -1,0 +1,21 @@
+{
+  "name": "Rose-Trust-For-Women",
+  "version": "1.0.0",
+  "description": "## 1. `create touch server.js file`",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valkimani/Rose-Trust-For-Women.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valkimani/Rose-Trust-For-Women/issues"
+  },
+  "homepage": "https://github.com/Valkimani/Rose-Trust-For-Women#readme"
+}
