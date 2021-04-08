@@ -7,4 +7,11 @@
 
 ## Build express app
 4. `Require express in sever.js`
+5.`Create an instance of express`
+6.`create a PORT for the server to run on`
+7.`listen on PORT`
+8.`add a middleware`
+
+9.`Create routes`
+10.``
 
