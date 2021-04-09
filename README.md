@@ -17,5 +17,9 @@
 8.`add a middleware`
 
 9.`Create routes`
-10.``
-
+## Add MongoDB/Mongoose to the server
+10.`require mongoose in server.js`
+11.`setup the mongoose connection`
+12.`Added mongoose config object to the .connect method to prevent deprecation warnings.`
+13.
+14.

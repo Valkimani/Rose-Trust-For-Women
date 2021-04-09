@@ -9,8 +9,15 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended:true }));
 app.use(express.json());
 
-//setup mongoose connection 
-mongoose.connect(process.env.MONGODB_URI  || "mongodb://localhost/Rose-Trust-For-Women");
+//setup mongoose connection and add mongoose config object to prevent deprecation warnings.
+mongoose.connect(process.env.MONGODB_URI  || "mongodb://localhost/Rose-Trust-For-Women",{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+    useCreateIndex: true
+  }
+  );
+
 
 // routes
 app.get("/api/config", (req, res) => {
