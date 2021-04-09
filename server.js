@@ -17,8 +17,17 @@ mongoose.connect(process.env.MONGODB_URI  || "mongodb://localhost/Rose-Trust-For
     useCreateIndex: true
   }
   );
+// To get better logs, add
+const connection = mongoose.connection;
 
-
+connection.on("connected", () => {
+    console.log("mongoose is successfully connected!")
+});
+// listen for an error 
+connection.on("error", (err) => {
+    // and if an error occurs, log the error
+    console.log("mongoose connection error: ", err)
+});
 // routes
 app.get("/api/config", (req, res) => {
     res.json({
